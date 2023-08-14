@@ -38,7 +38,6 @@ def verifie_existence(func):
     def wrapper(*args, **kwargs):
         gestionnaire = args[0]
         
-        # Determine whether we're dealing with a Dechet object or individual attributes
         if 'dechet_obj' in kwargs:
             dechet_nom = kwargs['dechet_obj']._Dechet__nom
         else:
